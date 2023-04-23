@@ -12,8 +12,9 @@ enum Resources {
         static var active = UIColor(hexString: "#437BFE")
         static var inactive = UIColor(hexString: "#929DA5")
         static var separator = UIColor(hexString: "#E8ECEF")
-        static var titleGray = UIColor(hexString: "545C77")
-        static var background = UIColor(hexString: "F8F9F9")
+        static var titleGray = UIColor(hexString: "#545C77")
+        static var background = UIColor(hexString: "#F8F9F9")
+        static var secondary = UIColor(hexString: "#F0F3FF")
     }
     
     enum Strings {
@@ -28,6 +29,10 @@ enum Resources {
             static var session = "High Intensity Cardio"
             static var progress = "Workout Progress"
             static var settings = "Settings"
+        }
+        
+        enum Overview {
+            static var allWorkoutsButton = "All Workouts"
         }
         
         enum Session {
@@ -47,6 +52,10 @@ enum Resources {
             static var session = UIImage(named: "Clock Icon")
             static var progress = UIImage(named: "Analytics Bars")
             static var settings = UIImage(named: "Gear Icon")
+        }
+        
+        enum Common {
+            static var downArrow = UIImage(named: "Down Arrow")
         }
     }
     

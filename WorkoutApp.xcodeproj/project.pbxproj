@@ -21,6 +21,7 @@
 		351EB66129F533A30084A202 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66029F533A30084A202 /* SessionController.swift */; };
 		351EB66329F543400084A202 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66229F543400084A202 /* ProgressController.swift */; };
 		351EB66529F543550084A202 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66429F543550084A202 /* SettingsController.swift */; };
+		351EB66829F5507B0084A202 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66729F5507B0084A202 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		351EB66029F533A30084A202 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		351EB66229F543400084A202 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		351EB66429F543550084A202 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		351EB66729F5507B0084A202 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		351EB65C29F533410084A202 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				351EB66629F550550084A202 /* Views */,
 				351EB63A29F514C80084A202 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -169,6 +172,14 @@
 				351EB66429F543550084A202 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		351EB66629F550550084A202 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				351EB66729F5507B0084A202 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				351EB63729F514C80084A202 /* AppDelegate.swift in Sources */,
 				351EB65529F52B0A0084A202 /* NavBarController.swift in Sources */,
 				351EB66129F533A30084A202 /* SessionController.swift in Sources */,
+				351EB66829F5507B0084A202 /* SecondaryButton.swift in Sources */,
 				351EB66329F543400084A202 /* ProgressController.swift in Sources */,
 				351EB65329F51A390084A202 /* Resources.swift in Sources */,
 				351EB63929F514C80084A202 /* SceneDelegate.swift in Sources */,
