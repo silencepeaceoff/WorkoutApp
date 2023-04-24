@@ -24,6 +24,9 @@
 		351EB66829F5507B0084A202 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66729F5507B0084A202 /* SecondaryButton.swift */; };
 		351EB66A29F5A5580084A202 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66929F5A5580084A202 /* OverviewNavBar.swift */; };
 		351EB66C29F5A59A0084A202 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66B29F5A59A0084A202 /* BaseView.swift */; };
+		351EB66F29F67E7B0084A202 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB66E29F67E7B0084A202 /* WeekView.swift */; };
+		351EB67129F680800084A202 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB67029F680800084A202 /* WeekdayView.swift */; };
+		351EB67329F688BF0084A202 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB67229F688BF0084A202 /* Date+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		351EB66729F5507B0084A202 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		351EB66929F5A5580084A202 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		351EB66B29F5A59A0084A202 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		351EB66E29F67E7B0084A202 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		351EB67029F680800084A202 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		351EB67229F688BF0084A202 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				351EB64F29F5191D0084A202 /* UIColor+ext.swift */,
 				351EB65929F531720084A202 /* UIView+ext.swift */,
+				351EB67229F688BF0084A202 /* Date+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,10 +189,20 @@
 		351EB66629F550550084A202 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				351EB66D29F67E680084A202 /* WeekView */,
 				351EB66729F5507B0084A202 /* SecondaryButton.swift */,
 				351EB66929F5A5580084A202 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		351EB66D29F67E680084A202 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				351EB66E29F67E7B0084A202 /* WeekView.swift */,
+				351EB67029F680800084A202 /* WeekdayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351EB66F29F67E7B0084A202 /* WeekView.swift in Sources */,
 				351EB66529F543550084A202 /* SettingsController.swift in Sources */,
 				351EB63B29F514C80084A202 /* OverviewController.swift in Sources */,
 				351EB66A29F5A5580084A202 /* OverviewNavBar.swift in Sources */,
@@ -266,11 +284,13 @@
 				351EB65529F52B0A0084A202 /* NavBarController.swift in Sources */,
 				351EB66129F533A30084A202 /* SessionController.swift in Sources */,
 				351EB66829F5507B0084A202 /* SecondaryButton.swift in Sources */,
+				351EB67329F688BF0084A202 /* Date+ext.swift in Sources */,
 				351EB66329F543400084A202 /* ProgressController.swift in Sources */,
 				351EB65329F51A390084A202 /* Resources.swift in Sources */,
 				351EB63929F514C80084A202 /* SceneDelegate.swift in Sources */,
 				351EB65A29F531720084A202 /* UIView+ext.swift in Sources */,
 				351EB66C29F5A59A0084A202 /* BaseView.swift in Sources */,
+				351EB67129F680800084A202 /* WeekdayView.swift in Sources */,
 				351EB65829F52F770084A202 /* BaseController.swift in Sources */,
 				351EB65029F5191D0084A202 /* UIColor+ext.swift in Sources */,
 			);
