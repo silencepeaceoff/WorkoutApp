@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Tabs: Int {
+enum Tabs: Int, CaseIterable {
     case overview
     case session
     case progress
@@ -19,18 +19,18 @@ final class TabBarController: UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        configure()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure() {
+    private func configureAppearance() {
         tabBar.backgroundColor = .white
-        tabBar.tintColor = Resources.Colors.active
-        tabBar.barTintColor = Resources.Colors.inactive
-        tabBar.layer.borderColor = Resources.Colors.separator.cgColor
+        tabBar.tintColor = R.Colors.active
+        tabBar.barTintColor = R.Colors.inactive
+        tabBar.layer.borderColor = R.Colors.separator.cgColor
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
@@ -44,17 +44,17 @@ final class TabBarController: UITabBarController {
         let progressNavigation = NavBarController(rootViewController: progressController)
         let settingsNavigation = NavBarController(rootViewController: settingsController)
         
-        overviewController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.overview,
-                                                     image: Resources.Images.TabBar.overview,
+        overviewController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.overview,
+                                                     image: R.Images.TabBar.overview,
                                                      tag: Tabs.overview.rawValue)
-        sessionController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.session,
-                                                     image: Resources.Images.TabBar.session,
+        sessionController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.session,
+                                                     image: R.Images.TabBar.session,
                                                      tag: Tabs.session.rawValue)
-        progressController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progress,
-                                                     image: Resources.Images.TabBar.progress,
+        progressController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.progress,
+                                                     image: R.Images.TabBar.progress,
                                                      tag: Tabs.progress.rawValue)
-        settingsController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.settings,
-                                                     image: Resources.Images.TabBar.settings,
+        settingsController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.settings,
+                                                     image: R.Images.TabBar.settings,
                                                      tag: Tabs.settings.rawValue)
         
         setViewControllers([

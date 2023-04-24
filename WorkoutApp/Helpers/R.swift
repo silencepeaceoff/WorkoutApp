@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Resources {
+enum R {
     enum Colors {
         static var active = UIColor(hexString: "#437BFE")
         static var inactive = UIColor(hexString: "#929DA5")
