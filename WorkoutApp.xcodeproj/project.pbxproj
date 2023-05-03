@@ -30,6 +30,7 @@
 		351EB67729F6978D0084A202 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB67629F6978D0084A202 /* WABaseInfoView.swift */; };
 		357E75E229FA6CD700DAC53D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E75E129FA6CD700DAC53D /* TimerView.swift */; };
 		357E75E529FA6D7500DAC53D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E75E429FA6D7500DAC53D /* ProgressView.swift */; };
+		35BE0C0C2A01838D008F539F /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BE0C0B2A01838D008F539F /* PercentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		351EB67629F6978D0084A202 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		357E75E129FA6CD700DAC53D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		357E75E429FA6D7500DAC53D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		35BE0C0B2A01838D008F539F /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			children = (
 				357E75E129FA6CD700DAC53D /* TimerView.swift */,
 				357E75E429FA6D7500DAC53D /* ProgressView.swift */,
+				35BE0C0B2A01838D008F539F /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				351EB66329F543400084A202 /* ProgressController.swift in Sources */,
 				351EB65329F51A390084A202 /* R.swift in Sources */,
 				351EB63929F514C80084A202 /* SceneDelegate.swift in Sources */,
+				35BE0C0C2A01838D008F539F /* PercentView.swift in Sources */,
 				351EB65A29F531720084A202 /* UIView+ext.swift in Sources */,
 				351EB66C29F5A59A0084A202 /* BaseView.swift in Sources */,
 				351EB67129F680800084A202 /* WeekdayView.swift in Sources */,

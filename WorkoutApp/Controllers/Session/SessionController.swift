@@ -10,11 +10,16 @@ import UIKit
 class SessionController: BaseController {
 
   private let timerView = TimerView()
-  private let timerDuration = 13.0
+  private let timerDuration = 15.0
 
   override func navBarLeftButtonHandler() {
     if timerView.state == .isStopped {
-      timerView.startTimer()
+      timerView.startTimer { progress in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+          self.navBarRightButtonHandler()
+          print(progress)
+        }
+      }
     } else {
       timerView.pauseTimer()
     }

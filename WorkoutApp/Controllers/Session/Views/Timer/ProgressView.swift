@@ -54,7 +54,7 @@ extension TimerView {
                                   clockwise: true)
 
       let barsLayer = CAShapeLayer()
-      barsLayer.path = circlePath.cgPath
+      barsLayer.path = barsPath.cgPath
       barsLayer.strokeColor = UIColor.clear.cgColor
       barsLayer.fillColor = UIColor.clear.cgColor
       barsLayer.lineWidth = 6
