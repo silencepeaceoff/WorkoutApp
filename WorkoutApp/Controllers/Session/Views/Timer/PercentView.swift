@@ -8,7 +8,7 @@
 import UIKit
 
 extension TimerView {
-  final class PercentView: BaseView {
+  final class PercentView: WABaseView {
 
     private let stackView: UIStackView = {
       let view = UIStackView()

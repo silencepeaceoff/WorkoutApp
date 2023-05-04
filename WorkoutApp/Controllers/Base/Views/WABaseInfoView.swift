@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WABaseInfoView: BaseView {
+class WABaseInfoView: WABaseView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -18,7 +18,7 @@ class WABaseInfoView: BaseView {
     
     private let button = WAButton(wth: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = R.Colors.separator.cgColor

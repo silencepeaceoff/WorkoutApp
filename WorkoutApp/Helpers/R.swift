@@ -46,6 +46,13 @@ enum R {
 
       static let completedPercent = "COMPLETED"
       static let remainingPercent = "REMAINING"
+
+      static let workoutStats = "Workout stats"
+      static let averagePace = "Average pace"
+      static let hearthRate = "Hearth rate"
+      static let totalDistance = "Total distance"
+      static let totalSteps = "Total steps"
+      static let stepsCounter = "Steps Counter"
     }
 
     enum Progress {
@@ -60,6 +67,13 @@ enum R {
       static let session = UIImage(named: "Clock Icon")
       static let progress = UIImage(named: "Analytics Bars")
       static let settings = UIImage(named: "Gear Icon")
+    }
+
+    enum Stats {
+      static let hearthRate = UIImage(named: "Heart Beat Icon")
+      static let averagePace = UIImage(named: "Speed Icon")
+      static let totalSteps = UIImage(named: "Steps Icon")
+      static let totalDistance = UIImage(named: "Maps Icon")
     }
 
     enum Common {
