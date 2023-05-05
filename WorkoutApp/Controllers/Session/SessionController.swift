@@ -54,6 +54,7 @@ extension SessionController {
 
   override func constraintViews() {
     super.constraintViews()
+    
     NSLayoutConstraint.activate([
       timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
       timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
@@ -67,7 +68,6 @@ extension SessionController {
       stepsView.topAnchor.constraint(equalTo: statsView.topAnchor),
       stepsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
       stepsView.heightAnchor.constraint(equalTo: statsView.heightAnchor)
-
     ])
   }
 

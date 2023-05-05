@@ -12,6 +12,7 @@
 		350607692A0427C800A31BE6 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607682A0427C800A31BE6 /* StepsView.swift */; };
 		3506076F2A04294500A31BE6 /* WABarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3506076E2A04294500A31BE6 /* WABarsView.swift */; };
 		350607712A042D8100A31BE6 /* WABarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607702A042D8100A31BE6 /* WABarView.swift */; };
+		350607742A04F77600A31BE6 /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607732A04F77600A31BE6 /* DailyPerformanceView.swift */; };
 		351EB63729F514C80084A202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63629F514C80084A202 /* AppDelegate.swift */; };
 		351EB63929F514C80084A202 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63829F514C80084A202 /* SceneDelegate.swift */; };
 		351EB63B29F514C80084A202 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63A29F514C80084A202 /* OverviewController.swift */; };
@@ -44,6 +45,7 @@
 		350607682A0427C800A31BE6 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		3506076E2A04294500A31BE6 /* WABarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarsView.swift; sourceTree = "<group>"; };
 		350607702A042D8100A31BE6 /* WABarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarView.swift; sourceTree = "<group>"; };
+		350607732A04F77600A31BE6 /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
 		351EB63329F514C80084A202 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		351EB63629F514C80084A202 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		351EB63829F514C80084A202 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,22 @@
 				350607702A042D8100A31BE6 /* WABarView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		350607722A04F75100A31BE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				350607752A04F79C00A31BE6 /* Performance */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		350607752A04F79C00A31BE6 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				350607732A04F77600A31BE6 /* DailyPerformanceView.swift */,
+			);
+			path = Performance;
 			sourceTree = "<group>";
 		};
 		351EB62A29F514C80084A202 = {
@@ -233,6 +251,7 @@
 		351EB65E29F5335F0084A202 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				350607722A04F75100A31BE6 /* Views */,
 				351EB66229F543400084A202 /* ProgressController.swift */,
 			);
 			path = Progress;
@@ -391,6 +410,7 @@
 				351EB65529F52B0A0084A202 /* NavBarController.swift in Sources */,
 				350607712A042D8100A31BE6 /* WABarView.swift in Sources */,
 				351EB66129F533A30084A202 /* SessionController.swift in Sources */,
+				350607742A04F77600A31BE6 /* DailyPerformanceView.swift in Sources */,
 				351EB66829F5507B0084A202 /* WAButton.swift in Sources */,
 				351EB67729F6978D0084A202 /* WABaseInfoView.swift in Sources */,
 				357E75E229FA6CD700DAC53D /* TimerView.swift in Sources */,
