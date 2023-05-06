@@ -86,6 +86,12 @@ enum R {
       static let downArrow = UIImage(named: "Down Arrow")
       static let addButton = UIImage(named: "Add")
     }
+
+    enum Overview {
+      static let rightArrow = UIImage(named: "Right Arrow")
+      static let checked = UIImage(named: "Checked")
+      static let unchecked = UIImage(named: "Unchecked")
+    }
   }
 
   enum Fonts {

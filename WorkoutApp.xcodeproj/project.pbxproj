@@ -19,6 +19,7 @@
 		350607802A0563C300A31BE6 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3506077F2A0563C300A31BE6 /* XAxisView.swift */; };
 		350607832A058A7A00A31BE6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607822A058A7A00A31BE6 /* ChartView.swift */; };
 		350607872A06579300A31BE6 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607862A06579300A31BE6 /* SectionHeader.swift */; };
+		350607892A06688100A31BE6 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350607882A06688100A31BE6 /* TrainingCellView.swift */; };
 		351EB63729F514C80084A202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63629F514C80084A202 /* AppDelegate.swift */; };
 		351EB63929F514C80084A202 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63829F514C80084A202 /* SceneDelegate.swift */; };
 		351EB63B29F514C80084A202 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EB63A29F514C80084A202 /* OverviewController.swift */; };
@@ -58,6 +59,7 @@
 		3506077F2A0563C300A31BE6 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		350607822A058A7A00A31BE6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		350607862A06579300A31BE6 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		350607882A06688100A31BE6 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		351EB63329F514C80084A202 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		351EB63629F514C80084A202 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		351EB63829F514C80084A202 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				350607862A06579300A31BE6 /* SectionHeader.swift */,
+				350607882A06688100A31BE6 /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				351EB66A29F5A5580084A202 /* OverviewNavBar.swift in Sources */,
 				351EB64D29F5170F0084A202 /* TabBarController.swift in Sources */,
 				350607782A050A8B00A31BE6 /* MonthlyPerformanceView.swift in Sources */,
+				350607892A06688100A31BE6 /* TrainingCellView.swift in Sources */,
 				351EB63729F514C80084A202 /* AppDelegate.swift in Sources */,
 				351EB65529F52B0A0084A202 /* NavBarController.swift in Sources */,
 				350607712A042D8100A31BE6 /* WABarView.swift in Sources */,
