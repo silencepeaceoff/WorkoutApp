@@ -102,7 +102,7 @@ extension TrainingCellView {
 
   func configureAppearance() {
     backgroundColor = .white
-//    layer.borderWidth = 1
-//    layer.borderColor = R.Colors.separator.cgColor
+    //    layer.borderWidth = 1
+    //    layer.borderColor = R.Colors.separator.cgColor
   }
 }

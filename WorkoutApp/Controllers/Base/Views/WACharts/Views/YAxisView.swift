@@ -8,14 +8,14 @@
 import UIKit
 
 final class YAxisView: WABaseView {
-
+  
   private let stackView: UIStackView = {
     let view = UIStackView()
     view.axis = .vertical
     view.distribution = .equalSpacing
     return view
   }()
-
+  
   func configure(with data: [WAChartsView.Data]) {
     guard let maxValue = data.sorted(by: { $0.value > $1.value }).first?.value else { return }
     stackView.arrangedSubviews.forEach {
@@ -35,13 +35,13 @@ final class YAxisView: WABaseView {
 extension YAxisView {
   override func setupViews() {
     super.setupViews()
-
+    
     setupView(stackView)
   }
-
+  
   override func constraintViews() {
     super.constraintViews()
-
+    
     NSLayoutConstraint.activate([
       stackView.topAnchor.constraint(equalTo: topAnchor),
       stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -49,7 +49,7 @@ extension YAxisView {
       stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
     ])
   }
-
+  
   override func configureAppearance() {
     super.configureAppearance()
     backgroundColor = .clear

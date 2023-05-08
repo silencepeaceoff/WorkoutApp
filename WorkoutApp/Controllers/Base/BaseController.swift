@@ -15,7 +15,7 @@ enum NavBarPosition {
 class BaseController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     setupViews()
     constraintViews()
     configureAppearance()
@@ -23,19 +23,19 @@ class BaseController: UIViewController {
 }
 
 @objc extension BaseController {
-
+  
   func setupViews() {}
-
+  
   func constraintViews() {}
-
+  
   func configureAppearance() {
     view.backgroundColor = R.Colors.background
   }
-
+  
   func navBarLeftButtonHandler() {
     print("Left button Pressed")
   }
-
+  
   func navBarRightButtonHandler() {
     print("Right button Pressed")
   }
@@ -48,7 +48,7 @@ extension BaseController {
     button.titleLabel?.font = R.Fonts.helveticaRegular(with: 17)
     button.setTitleColor(R.Colors.active, for: .normal)
     button.setTitleColor(R.Colors.inactive, for: .disabled)
-
+    
     switch position {
     case .left:
       button.addTarget(self, action: #selector(navBarLeftButtonHandler), for: .touchUpInside)
@@ -58,11 +58,11 @@ extension BaseController {
       navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
   }
-
+  
   func setTitleForNavBarButton(_ title: String, at position: NavBarPosition) {
     switch position {
     case .left:
-
+      
       (navigationItem.leftBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)
     case .right:
       (navigationItem.rightBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)

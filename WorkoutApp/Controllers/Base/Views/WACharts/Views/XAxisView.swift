@@ -8,14 +8,14 @@
 import UIKit
 
 final class XAxisView: WABaseView {
-
+  
   private let stackView: UIStackView = {
     let view = UIStackView()
     view.axis = .horizontal
     view.distribution = .equalSpacing
     return view
   }()
-
+  
   func configure(with data: [WAChartsView.Data]) {
     stackView.arrangedSubviews.forEach {
       $0.removeFromSuperview()
@@ -33,13 +33,13 @@ final class XAxisView: WABaseView {
 extension XAxisView {
   override func setupViews() {
     super.setupViews()
-
+    
     setupView(stackView)
   }
-
+  
   override func constraintViews() {
     super.constraintViews()
-
+    
     NSLayoutConstraint.activate([
       stackView.topAnchor.constraint(equalTo: topAnchor),
       stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -47,7 +47,7 @@ extension XAxisView {
       stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
     ])
   }
-
+  
   override func configureAppearance() {
     super.configureAppearance()
     backgroundColor = .clear

@@ -8,25 +8,25 @@
 import UIKit
 
 class WABaseView: UIView {
-    override init(frame: CGRect) {
-        super .init(frame: frame)
-        
-        setupViews()
-        constraintViews()
-        configureAppearance()
-    }
+  override init(frame: CGRect) {
+    super .init(frame: frame)
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    setupViews()
+    constraintViews()
+    configureAppearance()
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 }
 
 @objc extension WABaseView {
-    
-    func setupViews() {}
-    
-    func constraintViews() {}
-    
-    func configureAppearance() {}
-    
+  
+  func setupViews() {}
+  
+  func constraintViews() {}
+  
+  func configureAppearance() {}
+  
 }
